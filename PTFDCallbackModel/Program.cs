@@ -1,4 +1,9 @@
-using System.Runtime.InteropServices;
+/****
+ This program exports the model to a json schema
+ from the model.json generated, we can generate types for other languages
+ using eg https://app.quicktype.io/
+ *****/
+
 using Newtonsoft.Json.Schema.Generation;
 
 
