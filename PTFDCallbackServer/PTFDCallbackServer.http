@@ -6,15 +6,8 @@ Content-Type: application/json
 
 {
   "builderid": "1234",
-  "cacheid": "1234",
-  "dataid": "1234",
   "documentpath": "C:\\Users\\user\\Documents\\test.pdf",
-  "metadata": {
-    "title": "Test Document",
-    "author": "John Doe",
-    "subject": "Test Subject",
-    "keywords": "test, document"
-  }
+  "metadata": "<metadata><key>value</key></metadata>"
 }
 
 
