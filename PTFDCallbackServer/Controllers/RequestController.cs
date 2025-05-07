@@ -24,7 +24,7 @@ public class RequestController : ControllerBase
 
         // Process the request here
         // For example, you can log the request data
-        _logger.LogInformation($"Received request with DataID: {request.Builderid}");
+        _logger.LogInformation($"Received request with Builderid: {request.Builderid}");
 
         // Return a response
         // Documentpath should contain the path to the new document
