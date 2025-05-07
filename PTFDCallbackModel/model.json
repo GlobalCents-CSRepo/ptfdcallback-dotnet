@@ -8,22 +8,8 @@
         "null"
       ],
       "properties": {
-        "dataid": {
-          "description": "The DataID of the document.",
-          "type": [
-            "string",
-            "null"
-          ]
-        },
         "builderid": {
           "description": "The DataID of the builder.",
-          "type": [
-            "string",
-            "null"
-          ]
-        },
-        "cacheid": {
-          "description": "The ticket ID.",
           "type": [
             "string",
             "null"
@@ -49,20 +35,6 @@
         "null"
       ],
       "properties": {
-        "dataid": {
-          "description": "The DataID of the document.",
-          "type": [
-            "string",
-            "null"
-          ]
-        },
-        "cacheid": {
-          "description": "The ticket ID.",
-          "type": [
-            "string",
-            "null"
-          ]
-        },
         "documentpath": {
           "description": "the file path to the document",
           "type": [

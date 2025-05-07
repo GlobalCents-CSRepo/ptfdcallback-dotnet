@@ -24,15 +24,15 @@ public class RequestController : ControllerBase
 
         // Process the request here
         // For example, you can log the request data
-        _logger.LogInformation($"Received request with DataID: {request.Dataid}");
+        _logger.LogInformation($"Received request with DataID: {request.Builderid}");
 
         // Return a response
+        // Documentpath should contain the path to the new document
         var response = new CallbackResponse
         {
-            Dataid = request.Dataid,
-            Cacheid = request.Cacheid,
             Status = Status.Unchanged,
             Statusmsg = "Request processed successfully",
+            Documentpath = ""
         };
 
         return Ok(response);

@@ -33,18 +33,6 @@ namespace PTFDCallbackServer
         public string Builderid { get; set; }
 
         /// <summary>
-        /// The ticket ID.
-        /// </summary>
-        [JsonProperty("cacheid")]
-        public string Cacheid { get; set; }
-
-        /// <summary>
-        /// The DataID of the document.
-        /// </summary>
-        [JsonProperty("dataid")]
-        public string Dataid { get; set; }
-
-        /// <summary>
         /// The file path to the document
         /// </summary>
         [JsonProperty("documentpath")]
@@ -59,18 +47,6 @@ namespace PTFDCallbackServer
 
     public partial class CallbackResponse
     {
-        /// <summary>
-        /// The ticket ID.
-        /// </summary>
-        [JsonProperty("cacheid")]
-        public string Cacheid { get; set; }
-
-        /// <summary>
-        /// The DataID of the document.
-        /// </summary>
-        [JsonProperty("dataid")]
-        public string Dataid { get; set; }
-
         /// <summary>
         /// the file path to the document
         /// </summary>

@@ -24,18 +24,11 @@ public enum Status
 [Description("Provides context about the client or source system requesting the operation.")]
 public class CallbackRequest
 {
-    [JsonProperty("dataid", NullValueHandling = NullValueHandling.Ignore)]
-    [Description("The DataID of the document.")]
-    public string dataid{ get; set; }
-
+   
     [JsonProperty("builderid", NullValueHandling = NullValueHandling.Ignore)]
     [Description("The DataID of the builder.")]
     public string builderid{ get; set; }
     
-    [JsonProperty("cacheid", NullValueHandling = NullValueHandling.Ignore)]
-    [Description("The ticket ID.")]
-    public string cacheid{ get; set; }
-
     [JsonProperty("documentpath", NullValueHandling = NullValueHandling.Ignore)]
     [Description("The file path to the document")]
     public string documentpath{ get; set; }
@@ -51,15 +44,7 @@ public class CallbackRequest
 [Description("Provides the response to the PTFD callback request.")]
 public class CallbackResponse
 {
-    [JsonProperty("dataid", NullValueHandling = NullValueHandling.Ignore)]
-    [Description("The DataID of the document.")]
-    public string dataid{ get; set; }
-
-    
-    [JsonProperty("cacheid", NullValueHandling = NullValueHandling.Ignore)]
-    [Description("The ticket ID.")]
-    public string cacheid{ get; set; }
-
+   
     [JsonProperty("documentpath", NullValueHandling = NullValueHandling.Ignore)]
     [Description("the file path to the document")]
     public string documentpath{ get; set; }
