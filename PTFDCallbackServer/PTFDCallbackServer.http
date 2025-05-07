@@ -1,6 +1,22 @@
-@PTFDCallbackServer_HostAddress = http://localhost:5291
+@PTFDCallbackServer_HostAddress = https://localhost:44339
 
-GET {{PTFDCallbackServer_HostAddress}}/weatherforecast/
+POST {{PTFDCallbackServer_HostAddress}}/api/v1/callback
 Accept: application/json
+Content-Type: application/json
+
+{
+  "builderid": "1234",
+  "cacheid": "1234",
+  "dataid": "1234",
+  "documentpath": "C:\\Users\\user\\Documents\\test.pdf",
+  "metadata": {
+    "title": "Test Document",
+    "author": "John Doe",
+    "subject": "Test Subject",
+    "keywords": "test, document"
+  }
+}
+
+
 
 ###
