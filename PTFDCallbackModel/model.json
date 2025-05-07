@@ -1,0 +1,102 @@
+{
+  "definitions": {
+    "CallbackRequest": {
+      "title": "Callback request",
+      "description": "Provides context about the client or source system requesting the operation.",
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "dataid": {
+          "description": "The DataID of the document.",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "builderid": {
+          "description": "The DataID of the builder.",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "cacheid": {
+          "description": "The ticket ID.",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "documentpath": {
+          "description": "The file path to the document",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "metadata": {
+          "description": "The metadata associated to the document"
+        }
+      }
+    },
+    "CallbackResponse": {
+      "title": "Callback response",
+      "description": "Provides the response to the PTFD callback request.",
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "dataid": {
+          "description": "The DataID of the document.",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "cacheid": {
+          "description": "The ticket ID.",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "documentpath": {
+          "description": "the file path to the document",
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "status": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "enum": [
+            "Ok",
+            "Error",
+            "Unchanged"
+          ]
+        },
+        "statusmsg": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    }
+  },
+  "type": "object",
+  "properties": {
+    "request": {
+      "$ref": "#/definitions/CallbackRequest"
+    },
+    "response": {
+      "$ref": "#/definitions/CallbackResponse"
+    }
+  }
+}
